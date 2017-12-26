@@ -15,7 +15,7 @@ Download the BSP source:
 $: PATH=${PATH}:~/bin
 $: mkdir koan-toradex
 $: cd koan-toradex
-$: repo init -u https://github.com/koansoftware/koan-toradex-bsp-repo -b morty
+$: repo init -u https://github.com/koansoftware/koan-toradex-bsp-repo
 $: repo sync
 
 At the end of the commands you have every metadata you need to start work with.
