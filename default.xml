@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  koan-toradex-bsp-repo -->
+
+<manifest>
+
+  <default sync-j="4" revision="morty"/>
+
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/koansoftware" name="koan"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+
+  <remote fetch="http://github.com/Freescale" name="githf"/>
+  <remote fetch="http://git.toradex.com" name="tdx"/>
+
+  <project name="meta-freescale.git" path="sources/meta-freescale" remote="githf" revision="05681fdf8298bb441c15135eae424c7601b07e98" upstream="morty"/>
+  <project name="meta-freescale-3rdparty.git" path="sources/meta-freescale-3rdparty" remote="githf" revision="e55167c3c2770c07a475342f99cc2a3a23fbfa0c" upstream="morty"/>
+  <project name="meta-toradex-nxp.git" path="sources/meta-toradex-nxp" remote="tdx" revision="c4f34b34bf34f44b974a7add623cafff17d880ad" upstream="morty"/>
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="bb3fafea5a3094909c8d7fb3216c37210fcfc339" upstream="morty"/>
+
+  <project remote="yocto" revision="morty" name="poky" path="sources/poky"/>
+  <project remote="oe" revision="morty" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="qt5" revision="morty" name="meta-qt5" path="sources/meta-qt5"/>
+
+<!--
+  <project remote="koan" revision="morty" name="koan-toradex-bsp-base" path="sources/base">
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+-->
+
+</manifest>
